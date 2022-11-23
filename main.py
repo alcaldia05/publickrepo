@@ -22,8 +22,8 @@ from pydownloader.downloader import Downloader
 import shorturl
 import xdlink
 
-tl_admin_users = ['Hiyabo',] #Poner aqui los user con acceso permanente
-godlist = ['Hiyabo'] #Poner aqui los admin 
+tl_admin_users = ['nautaii',] #Poner aqui los user con acceso permanente
+godlist = ['nautaii'] #Poner aqui los admin 
 
 async def get_root(username):
     if os.path.isdir(config.ROOT_PATH+username)==False:
