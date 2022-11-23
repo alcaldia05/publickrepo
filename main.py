@@ -171,7 +171,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
 
     #if username not in config.ACCES_USERS:
     if username not in tl_admin_users:
-        await bot.send_message(ev.chat.id,'❌ ℕ𝕠 𝕥𝕚𝕖𝕟𝕖𝕤 #𝕒𝕔𝕔𝕖𝕤𝕠, 𝕔𝕠𝕟𝕥𝕒𝕔𝕥𝕒 𝕔𝕠𝕟 @raydel0307 ❌')
+        await bot.send_message(ev.chat.id,'❌ ℕ𝕠 𝕥𝕚𝕖𝕟𝕖𝕤 #𝕒𝕔𝕔𝕖𝕤𝕠, 𝕔𝕠𝕟𝕥𝕒𝕔𝕥𝕒 𝕔𝕠𝕟 @nautaii❌')
         return
 
     if not os.path.isdir(config.ROOT_PATH + username):
