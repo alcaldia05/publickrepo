@@ -22,8 +22,8 @@ from pydownloader.downloader import Downloader
 import shorturl
 import xdlink
 
-tl_admin_users = ['Hiyabo',] #Poner aqui los user con acceso permanente
-godlist = ['Hiyabo'] #Poner aqui los admin 
+tl_admin_users = ['nautaii',] #Poner aqui los user con acceso permanente
+godlist = ['nautaii'] #Poner aqui los admin 
 
 async def get_root(username):
     if os.path.isdir(config.ROOT_PATH+username)==False:
@@ -213,8 +213,8 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
         pass
 
     if '/start' in text:
-        reply = '————————》<a href="https://t.me/raydel0307">RayServer</a>《—————————\n'
-        reply += '#𝔹𝕠𝕥 𝕡𝕖𝕣𝕥𝕖𝕟𝕖𝕔𝕚𝕖𝕟𝕥𝕖 𝕒 𝕝𝕒 𝕔𝕒𝕕𝕖𝕟𝕒  #ℝ𝕒𝕪𝕊𝕖𝕣𝕧𝕖𝕣\n\n'
+        reply = '————————》<a href="https://t.me/nautaii">RayServer</a>《—————————\n'
+        reply += '#𝔹𝕠𝕥 𝕡𝕖𝕣𝕥𝕖𝕟𝕖𝕔𝕚𝕖𝕟𝕥𝕖 𝕒 𝕝𝕒 𝕔𝕒𝕕𝕖𝕟𝕒  #nautai_dowload\n\n'
         reply += '𝓔𝓷𝓿í𝓮𝓶𝓮 𝓮𝓷𝓵𝓪𝓬𝓮𝓼 𝓹𝓪𝓻𝓪 𝓼𝓮𝓻 #𝓓𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓭𝓸𝓼\n🔍 𝓜𝓪𝓷𝓭𝓮 /info 𝔂 𝓵𝓮𝓪 𝓭𝓮𝓽𝓪𝓵𝓵𝓪𝓭𝓪𝓶𝓮𝓷𝓽𝓮\n————————》<a href="https://t.me/raydel0307">RayServer</a>《—————————\n'
         message = await bot.send_message(ev.chat.id,reply,parse_mode='html')
         pass
