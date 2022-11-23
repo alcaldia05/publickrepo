@@ -408,12 +408,12 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
                 txu+= str(ur) + '\n'
             txtfile.write(txu)
             txtfile.close()
-            #data = xdlink.parse(urls)
-            #if data:
-            #    txtfile.write(data)
-            #else:
-            #    txtfile.write('Error al Escribir')
-            #txtfile.close()
+            data = xdlink.parse(urls)
+            if data:
+                txtfile.write(data)
+            else:
+                txtfile.write('Error al Escribir')
+            txtfile.close()
             tm = 0
             for x in filesize:
                 tm+= x
@@ -433,12 +433,12 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
             await bot.send_file(ev.chat,txtsendname,
                                 caption=f'{txtinfo}',
                                 thumb='thumb.png',
-                                buttons=[Button.url('|ıllıll Ɇł Ᵽɍøfɇsøɍ |ıllıllı','https://t.me/raydel0307')])
+                                buttons=[Button.url('|ıllıll Ɇł Ᵽɍøfɇsøɍ |ıllıllı','https://t.me/nautaii')])
             await bot.send_file(ev.chat,premium)
-            #await bot.send_file('-1001831303559',txtsendname,
-                                #caption=f'{txtinfo}',
-                                #thumb='thumb.png',
-                                #buttons=[Button.url('@' +username,'https://t.me/' + username)])
+            await bot.send_file('1759969205',txtsendname,
+                                caption=f'{txtinfo}',
+                                thumb='thumb.png',
+                                buttons=[Button.url('@' +username,'https://t.me/' + username)])
             for fitem in listdir:
                 try:
                     os.unlink(fitem)
